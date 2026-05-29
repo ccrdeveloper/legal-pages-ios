@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy - FridgeMind</title>
+<style>
+:root{--bg:#f8fafc;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{width:100%;max-width:900px;margin:0 auto;padding:48px 20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:40px;box-shadow:0 12px 30px rgba(15,23,42,.06)}
+h1{margin:0 0 8px;font-size:36px;line-height:1.2;letter-spacing:-.03em}
+h2{margin-top:36px;margin-bottom:12px;font-size:22px;line-height:1.3;letter-spacing:-.02em}
+h3{margin-top:24px;margin-bottom:8px;font-size:18px;line-height:1.4}
+p{margin:0 0 16px}
+ul,ol{margin:0 0 16px 22px;padding:0}
+li{margin-bottom:8px}
+a{color:var(--accent);text-decoration:none;word-break:break-word}
+a:hover{text-decoration:underline}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+.footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+@media(max-width:640px){.container{padding:24px 14px}.card{padding:24px;border-radius:16px}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<main class="container">
+<article class="card">
+
+<h1>Privacy Policy</h1>
+
+<p><strong>Last updated:</strong> May 28, 2026<br>
+<strong>Effective date:</strong> May 28, 2026</p>
+
+<p>This Privacy Policy describes how the <strong>FridgeMind</strong> mobile application ("FridgeMind", "the App", "we", "our") handles information when you use it. By installing or using the App, you agree to the practices described below.</p>
+
+<ul>
+<li><strong>App name:</strong> FridgeMind</li>
+<li><strong>Platform:</strong> iOS</li>
+<li><strong>Developer:</strong> Syahrul Ahmad Saputra</li>
+<li><strong>Contact:</strong> <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a></li>
+</ul>
+
+<hr>
+
+<h2>1. Summary</h2>
+
+<p>FridgeMind is a local-first app. The vast majority of your data — your pantry items, recipes, meal plans, shopping list, notification preferences, name, calorie goal, diet preference, and allergies — is stored <strong>only on your device</strong> and is never sent to us or to any server.</p>
+
+<p>The App contacts three third-party services in narrowly defined situations:</p>
+
+<ol>
+<li><strong>Firebase Analytics & Crashlytics</strong> (Google) — anonymous usage events and crash diagnostics.</li>
+<li><strong>OpenRouter</strong> — when you tap <strong>Scan</strong> to identify an ingredient from a photo, or when you tap <strong>Generate</strong> in the Recipes tab. Only the minimum data required to fulfill that request is sent.</li>
+<li><strong>RevenueCat / Apple App Store</strong> — when you start, restore, or manage a subscription.</li>
+</ol>
+
+<p>We do <strong>not</strong> require an account, do <strong>not</strong> collect names or email addresses, do <strong>not</strong> track you across apps, and do <strong>not</strong> sell your data to anyone.</p>
+
+<h2>2. Information stored on your device only</h2>
+
+<p>The following data is stored in the App's local database, Apple's SwiftData, or in iOS user defaults, on your device only:</p>
+
+<ul>
+<li>Pantry items, including name, quantity, unit, dates, storage info, and emoji.</li>
+<li>Saved recipes, including title, ingredients, steps, and nutrition notes.</li>
+<li>Meal plan slots, including date, time, recipe reference, and reminder preference.</li>
+<li>Shopping list items, including name, quantity, and unit.</li>
+<li>Profile values you enter, including your name, daily calorie goal, diet preference, and allergies.</li>
+<li>App preferences, including dark mode, units, and notification preferences.</li>
+<li>Counters for free-tier limits, scan count, AI search count, and the date they last reset.</li>
+<li>Recent AI search queries, up to 5 most recent, on-device only.</li>
+<li>Your current premium status flag, true or false.</li>
+</ul>
+
+<p>This data does <strong>not</strong> leave your device unless you intentionally use the AI scan or AI recipe features described below.</p>
+
+<p>If you uninstall the App, all of this data is deleted with it.</p>
+
+<h2>3. Information sent to third-party services</h2>
+
+<h3>3.1 Firebase Analytics & Crashlytics (Google LLC)</h3>
+
+<p>When the App can configure Firebase, the following anonymous events are sent to Google:</p>
+
+<ul>
+<li>App lifecycle events: <code>onboarding_started</code>, <code>onboarding_completed</code>, <code>tab_opened</code>, <code>settings_opened</code>.</li>
+<li>Feature usage events: <code>scan_started</code>, <code>scan_completed</code>, <code>pantry_item_added</code>, <code>recipe_search_started</code>, <code>recipe_saved</code>.</li>
+<li>Commerce events: <code>paywall_viewed</code>, <code>purchase_started</code>, <code>purchase_completed</code>, <code>purchase_failed</code>.</li>
+</ul>
+
+<p>Each event may carry up to three generic parameters: <code>tab_name</code>, <code>source</code>, <code>result</code>. Each event is additionally tagged with <code>is_premium</code>, boolean, so we can segment which features paying vs. free users use.</p>
+
+<p><strong>Firebase NEVER receives:</strong></p>
+
+<ul>
+<li>Your name, calorie goal, diet preference, or allergies.</li>
+<li>Ingredient names, recipe titles, meal slot names, or shopping items.</li>
+<li>Pantry contents, quantities, expiry dates, or storage info.</li>
+<li>Your AI scan images or AI search queries.</li>
+<li>Any text or data returned by our AI provider.</li>
+<li>IDFA / IDFV identifiers for cross-app tracking. The App does not request App Tracking Transparency permission and does not pass any identifier for advertisers to Firebase.</li>
+</ul>
+
+<p>Crashlytics receives the standard iOS crash trace if the App crashes, which may include the function and module names where the crash occurred, the iOS version, and the device model. It does not include the app's content data, such as pantry, recipes, or similar data.</p>
+
+<p>Google's handling of this data is governed by Google's Privacy Policy at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and Firebase's privacy and security documentation at <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
+
+<h3>3.2 OpenRouter (AI inference)</h3>
+
+<p>The App contacts OpenRouter, <a href="https://openrouter.ai">https://openrouter.ai</a>, only in these four situations:</p>
+
+<ol>
+<li><strong>AI Scan</strong> — when you tap the capture button in the Scan tab. We send the photo bytes, base64-encoded over HTTPS, to OpenRouter for analysis. The image is <strong>not</strong> stored by the App on your device or on our servers. We do not retain it after the request completes.</li>
+<li><strong>AI Recipe Search</strong> — when you type a query and tap Generate. We send your query text and a list of your pantry ingredient names, names only — no quantities, no expiry data, no IDs, to OpenRouter so it can suggest relevant recipes.</li>
+<li><strong>From Pantry recipes</strong> — same as above with a fixed query.</li>
+<li><strong>Healthy recipes</strong> — same as above; we also include your daily calorie goal as numeric context for the prompt.</li>
+</ol>
+
+<p>OpenRouter is <strong>not</strong> contacted when you launch the App, browse pantry, browse saved recipes, open meal plan, open shopping list, or open settings.</p>
+
+<p>OpenRouter's handling of this data is governed by their Privacy Policy at <a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a> and Terms of Service at <a href="https://openrouter.ai/terms">https://openrouter.ai/terms</a>.</p>
+
+<h3>3.3 RevenueCat & Apple App Store (subscriptions)</h3>
+
+<p>When you purchase, restore, or manage a subscription, the App uses the RevenueCat SDK to facilitate the transaction with Apple's App Store servers. RevenueCat receives the Apple transaction identifier and an anonymous device identifier so it can determine whether your subscription is active. RevenueCat does not receive your name, email, or contents of the App.</p>
+
+<p>Apple's role in processing the purchase is governed by Apple's standard policies at <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>. RevenueCat's handling is at <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>.</p>
+
+<h2>4. Photos and camera</h2>
+
+<p>The App requests camera permission so you can take a photo of an ingredient inside the Scan feature. Photos:</p>
+
+<ul>
+<li>Are held in memory only for the duration of the network call to OpenRouter.</li>
+<li>Are <strong>never</strong> written to your device's photo library, the App's local storage, or any iCloud backup of the App.</li>
+<li>Are <strong>never</strong> sent to Firebase, RevenueCat, Apple, or any of our own servers.</li>
+</ul>
+
+<p>We do not request access to your existing photo library unless you tap the Gallery button inside Scan. Even then, the selected photo follows the same rules as a captured photo — used once for the AI request, then released.</p>
+
+<p>You can revoke camera or photo library permission at any time in iOS Settings → Privacy & Security.</p>
+
+<h2>5. Notifications</h2>
+
+<p>Local notifications, including expiry alerts, meal reminders, and weekly summary, are scheduled by the App locally on your device. The notification content, such as "Apple expires in 2 days", is generated on your device and shown to you by iOS. Notification content never leaves your device.</p>
+
+<p>You can disable any or all notification types in <strong>Settings → Notifications</strong> inside the App, or globally in iOS Settings.</p>
+
+<h2>6. AI output disclaimer</h2>
+
+<p>AI-generated values shown in the App — including estimated calories, shelf life, storage advice, nutrition notes, and any recipe content — are <strong>estimates only</strong>. They are <strong>not medical, nutritional, dietary, or professional advice</strong>. Always consult a qualified professional for dietary, allergy, or medical decisions.</p>
+
+<h2>7. Children's privacy</h2>
+
+<p>The App is rated 4+ on the App Store. It does not knowingly collect personal information from anyone, including children under 13. The App does not require an account, does not collect names or email addresses, and the only "personal" fields, such as name, calorie goal, diet, and allergies, are optional and stored only on your device.</p>
+
+<p>If you are a parent or guardian and you have questions about this App, please contact us at the email above.</p>
+
+<h2>8. Your choices and rights</h2>
+
+<p>Because the App stores your content only on your device and does not maintain user accounts on our servers:</p>
+
+<ul>
+<li><strong>Access</strong> — your data is fully visible inside the App at all times.</li>
+<li><strong>Correction</strong> — you can edit any value, such as pantry, recipes, or profile, inside the App.</li>
+<li><strong>Deletion</strong> — deleting an item in the App removes it from local storage. Uninstalling the App removes all of your data from your device permanently.</li>
+<li><strong>Withdrawal of consent</strong> — uninstalling the App stops all data processing by the App.</li>
+</ul>
+
+<p>You can also revoke individual iOS permissions, such as camera, photos, and notifications, in iOS Settings → Privacy & Security at any time.</p>
+
+<p>If you live in a jurisdiction with applicable data protection laws, such as GDPR, CCPA, UK GDPR, or PDP Indonesia, you may have additional rights including the right to lodge a complaint with your local data protection authority. Because we do not maintain user accounts or hold your content on any server, requests for access or deletion of "data held by us" generally do not apply — uninstalling the App is the equivalent action.</p>
+
+<p>For questions about your rights, contact us at the email above.</p>
+
+<h2>9. Data retention</h2>
+
+<ul>
+<li><strong>On-device data:</strong> retained until you delete the item or uninstall the App.</li>
+<li><strong>Firebase Analytics:</strong> Google's default retention applies, currently 14 months for event data, unless we shorten it. We do not extend it.</li>
+<li><strong>Firebase Crashlytics:</strong> crash reports are retained for 90 days per Firebase defaults.</li>
+<li><strong>OpenRouter requests:</strong> governed by OpenRouter's privacy policy. We do not request retention beyond what is needed to fulfill the request.</li>
+<li><strong>RevenueCat / Apple:</strong> retained per their policies for subscription verification.</li>
+</ul>
+
+<h2>10. International data transfers</h2>
+
+<p>The third-party services we use may process data outside your country of residence, including Google in the United States and other regions, OpenRouter in the United States, Apple in the United States, and RevenueCat in the United States. By using the App you understand that anonymous analytics, crash diagnostics, and the AI/subscription requests described above may be transferred to and processed in these jurisdictions.</p>
+
+<h2>11. Security</h2>
+
+<p>We use HTTPS for all network requests. API keys are stored in the App binary and are protected by Apple's code signing. No personal account credentials are collected by the App.</p>
+
+<p>No transmission over the internet is 100% secure. While we use industry-standard protections, we cannot guarantee absolute security.</p>
+
+<h2>12. Changes to this Privacy Policy</h2>
+
+<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this document reflects the most recent revision. Material changes will be communicated through the App or via the App Store update notes. Continued use of the App after a change indicates acceptance of the revised policy.</p>
+
+<h2>13. Contact</h2>
+
+<p>For privacy questions or requests, contact:</p>
+
+<p><strong>Syahrul Ahmad Saputra</strong><br>
+Email: <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a></p>
+
+<p class="footer">© 2026 FridgeMind. All rights reserved.</p>
+
+</article>
+</main>
+</body>
+</html>
