@@ -1,124 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - One Little Declutter</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #2E3628;
-            background-color: #FAF8F5;
-            margin: 0;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(78, 101, 58, 0.05);
-            border: 1px solid #DFE4D9;
-        }
-        h1 {
-            color: #4E653A;
-            font-size: 2.2rem;
-            margin-top: 0;
-            border-bottom: 2px solid #E4EFE0;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #4E653A;
-            font-size: 1.5rem;
-            margin-top: 30px;
-        }
-        p, li {
-            font-size: 1.05rem;
-            color: #2E3628;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .highlight-box {
-            background-color: #E4EFE0;
-            border-left: 4px solid #B2C89E;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .highlight-box p {
-            margin: 0;
-            font-weight: 500;
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #6E7764;
-            text-align: center;
-            border-top: 1px solid #DFE4D9;
-            padding-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Little Declutter: Frugal - Privacy Policy</title>
+
+  <style>
+    :root {
+      --bg: #f8f4e8;
+      --card: #fffaf0;
+      --text: #2f3328;
+      --muted: #626a56;
+      --primary: #8fa174;
+      --primary-dark: #61704c;
+      --border: #ded6c4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(135deg, #dfe6c7, #f8f4e8);
+      padding: 56px 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { margin: 0 0 10px; font-size: 2rem; line-height: 1.2; }
+    header p { margin: 0; color: var(--muted); font-size: 1rem; }
+    main { max-width: 900px; margin: 32px auto; padding: 0 20px 48px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 30px rgba(61, 66, 50, 0.08);
+    }
+    h2 { margin-top: 0; font-size: 1.55rem; color: var(--primary-dark); }
+    h3 { margin-top: 28px; font-size: 1.15rem; color: var(--text); }
+    p, li { color: var(--text); }
+    ul { padding-left: 22px; }
+    .meta {
+      background: #edf0db;
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 14px;
+      color: var(--muted);
+      margin: 18px 0;
+    }
+    a { color: var(--primary-dark); font-weight: 600; }
+    footer { text-align: center; color: var(--muted); padding: 28px 20px 44px; font-size: 0.95rem; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171a14;
+        --card: #22271d;
+        --text: #f5f0df;
+        --muted: #c3c9ad;
+        --primary: #a8b98a;
+        --primary-dark: #c7d7a7;
+        --border: #343b2b;
+      }
+      header { background: linear-gradient(135deg, #242b1e, #171a14); }
+      .meta { background: #2b3224; }
+      section { box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); }
+    }
+  </style>
+
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> June 2, 2026</p>
-        
-        <p>Welcome to <strong>One Little Declutter</strong>. Your privacy is of utmost importance to us. This Privacy Policy explains how our mobile application handles user information and data.</p>
+  <header>
+    <h1>One Little Declutter: Frugal</h1>
+    <p>Privacy Policy</p>
+  </header>
 
-        <div class="highlight-box">
-            <p>TL;DR: One Little Declutter is designed around a local-first philosophy. Your personal decluttering entries, logs, notes, and emotional mood states are stored locally on your device and are never sent to any external servers.</p>
-        </div>
+  <main>
+    <section id="privacy-policy">
+      <h2>Privacy Policy</h2>
 
-        <h2>1. Information Collection & Use</h2>
-        
-        <h3>Local User Content</h3>
-        <p>All items you log, categories you choose, notes you write, dates completed, and emotional reflection check-ins (before and after states) are stored locally in the application's sandbox using CoreData and secure local device storage. 
-        <ul>
-            <li>We do not host or operate servers that store your personal decluttering logs or written notes.</li>
-            <li>We do not have access to, read, or distribute your custom logs or personal notes.</li>
-            <li>Deleting the app from your device will permanently erase this local data unless you have a device-level backup (like an iCloud device backup).</li>
-        </ul>
-        </p>
+      <div class="meta">
+        <strong>Effective Date:</strong> 2026<br />
+        <strong>App Name:</strong> One Little Declutter: Frugal<br />
+        <strong>Developer:</strong> Syahrul Ahmad Saputra<br />
+        <strong>Contact:</strong> <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a>
+      </div>
 
-        <h3>App Settings & Preferences</h3>
-        <p>Preferences such as your greeting name, notification reminders, sound settings, haptic settings, and app themes are stored locally on your device using standard OS preferences (UserDefaults) and shared only within your device's App Group for widget sync.</p>
+      <p>
+        This Privacy Policy explains how Syahrul Ahmad Saputra (“we,” “us,” or “our”) handles information in connection with the mobile application One Little Declutter: Frugal (the “App”).
+        By using the App, you agree to the practices described in this Privacy Policy.
+      </p>
 
-        <h2>2. Third-Party Services & Integrations</h2>
-        <p>We work with trusted third-party providers to facilitate specific technical actions in the app:</p>
-        
-        <ul>
-            <li><strong>RevenueCat:</strong> We use RevenueCat to process and validate in-app subscription purchases (One Little Declutter Pro). RevenueCat maps subscription entitlements using anonymous, random user identifiers. No personal decluttering notes, names, or mood data are shared with RevenueCat.</li>
-            <li><strong>App Store / StoreKit:</strong> Transactions and subscription billing are handled directly by Apple's App Store. We do not collect or store your payment details, credit card numbers, or billing addresses.</li>
-        </ul>
+      <h3>1. Overview</h3>
+      <p>
+        One Little Declutter: Frugal is a simple decluttering, minimalism, and frugal living habit app. It helps users complete small daily declutter challenges,
+        track progress, view minimalist quotes, set reminders, and build a lighter daily routine.
+      </p>
 
-        <h2>3. Usage Analytics (Optional)</h2>
-        <p>If you choose to keep analytics enabled, the app collects anonymous telemetry events (such as tracking when a challenge is marked complete, when a quote is favorited, or when onboarding is completed) to help us improve the user experience. 
-        <ul>
-            <li>These events do not contain any personal identifier or custom text you write.</li>
-            <li>You can disable analytics tracking at any time by toggling "Share Usage Analytics" off in the Settings screen.</li>
-        </ul>
-        </p>
+      <h3>2. Information We Do Not Collect</h3>
+      <p>
+        We do not require you to create an account to use the App. We do not intentionally collect sensitive personal information such as your government ID,
+        precise location, health information, religious beliefs, or financial account details.
+      </p>
 
-        <h2>4. Notification Data</h2>
-        <p>Daily reminder alerts and re-engagement notifications are scheduled and processed locally on your device via iOS UserNotifications. We do not use remote push servers, and no notifications transmit your declutter details or activity history off-device.</p>
+      <h3>3. Information Stored on Your Device</h3>
+      <p>The App may store information locally on your device to provide core features, such as:</p>
+      <ul>
+        <li>Daily declutter challenge progress</li>
+        <li>Items removed or journal entries you choose to save</li>
+        <li>Streaks and completion history</li>
+        <li>Favorite minimalist quotes</li>
+        <li>Reminder preferences</li>
+        <li>App settings and appearance preferences</li>
+      </ul>
+      <p>
+        This information is used to make the App function properly and personalize your experience. If you delete the App, locally stored data may also be deleted.
+      </p>
 
-        <h2>5. Children's Privacy</h2>
-        <p>One Little Declutter does not target or knowingly collect any personal information from children under the age of 13. Since all custom entries and logs are stored solely on your device, we do not compile databases of children's data.</p>
+      <h3>4. Optional Notifications</h3>
+      <p>
+        The App may ask permission to send local notifications, such as daily declutter reminders. Notifications are optional and can be managed in your device settings.
+        We do not use notifications to collect personal information.
+      </p>
 
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date above.</p>
+      <h3>5. Purchases and Subscriptions</h3>
+      <p>
+        The App may offer premium features through in-app purchases or subscriptions. Purchases are processed by Apple through the App Store.
+        We do not receive or store your full payment card details.
+      </p>
+      <p>
+        The App may use a third-party purchase management service, such as RevenueCat, to help validate purchases, manage subscription status,
+        and restore access to premium features. Such services may process limited purchase-related identifiers in accordance with their own privacy practices.
+      </p>
 
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions, suggestions, or concerns regarding your privacy in the app, please feel free to reach out to us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a></p>
+      <h3>6. Analytics and Diagnostics</h3>
+      <p>
+        We may use privacy-conscious analytics or diagnostic tools to understand general App performance, feature usage, crashes, and reliability.
+        This information helps us improve the App. Analytics, if used, are intended to be aggregated and not used to personally identify you.
+      </p>
 
-        <div class="footer">
-            <p>&copy; 2026 CCR Dev. All rights reserved.</p>
-        </div>
-    </div>
+      <h3>7. Third-Party Services</h3>
+      <p>
+        The App may use third-party services for app functionality, analytics, diagnostics, or purchase management. These services may process limited technical data
+        according to their own privacy policies. Examples may include Apple services, RevenueCat, or analytics/crash reporting providers if integrated.
+      </p>
+
+      <h3>8. Data Sharing</h3>
+      <p>
+        We do not sell your personal information. We may share limited information only when necessary to operate the App, comply with legal obligations,
+        protect our rights, or support services such as purchase validation and app diagnostics.
+      </p>
+
+      <h3>9. Children’s Privacy</h3>
+      <p>
+        The App is not intended to knowingly collect personal information from children. If you believe a child has provided personal information to us,
+        please contact us so we can take appropriate action.
+      </p>
+
+      <h3>10. Your Choices</h3>
+      <p>
+        You can manage App permissions, notifications, and subscriptions through your device settings and App Store account settings.
+        You may also delete the App to remove locally stored App data from your device, subject to your device and operating system behavior.
+      </p>
+
+      <h3>11. Data Security</h3>
+      <p>
+        We take reasonable measures to protect information associated with the App. However, no method of electronic storage or transmission is completely secure,
+        and we cannot guarantee absolute security.
+      </p>
+
+      <h3>12. Changes to This Privacy Policy</h3>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted within the App, on our website, or through other appropriate means.
+        Continued use of the App after changes means you accept the updated Privacy Policy.
+      </p>
+
+      <h3>13. Contact Us</h3>
+      <p>
+        If you have questions about this Privacy Policy, contact us at:
+        <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CCR Dev. All rights reserved.</p>
+  </footer>
 </body>
 </html>
