@@ -5,352 +5,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - GlowStyle Ideas</title>
   <style>
+    :root {
+      --bg: #fffaf7;
+      --card: #ffffff;
+      --text: #2b2523;
+      --muted: #6f625e;
+      --accent: #d98686;
+      --accent-soft: #f7ded9;
+      --border: #ead9d3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #fffaf7;
       margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      background: linear-gradient(180deg, var(--bg), #ffffff 40%);
+      color: var(--text);
     }
-    main {
-      max-width: 860px;
+
+    .container {
+      max-width: 920px;
       margin: 0 auto;
-      padding: 32px 20px;
-      background: #ffffff;
+      padding: 40px 20px 64px;
     }
-    h1, h2, h3 {
-      color: #3a2528;
-      line-height: 1.3;
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 18px 50px rgba(90, 55, 45, 0.08);
     }
+
     h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #241d1b;
     }
+
+    .updated {
+      display: inline-block;
+      margin: 8px 0 24px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #7b3f3f;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
     h2 {
-      margin-top: 32px;
-      font-size: 22px;
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      font-size: 1.45rem;
+      color: #302422;
     }
+
     h3 {
-      margin-top: 22px;
-      font-size: 18px;
+      margin-top: 24px;
+      font-size: 1.1rem;
+      color: #4a3330;
     }
-    p, li {
-      font-size: 16px;
+
+    p {
+      margin: 12px 0;
     }
-    .meta {
-      color: #666;
-      margin-bottom: 28px;
+
+    ul, ol {
+      padding-left: 24px;
     }
-    .box {
-      background: #fff3ee;
-      border-left: 4px solid #d98b78;
-      padding: 14px 16px;
-      margin: 20px 0;
-      border-radius: 8px;
+
+    li {
+      margin: 8px 0;
     }
+
     a {
-      color: #9c4f5d;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 600;
+      overflow-wrap: anywhere;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    strong {
+      color: #231918;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #f7efec;
+      color: #6a3d38;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.92em;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .contact-box {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff5f2;
+      border: 1px solid var(--border);
+    }
+
     footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      color: #666;
-      font-size: 14px;
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 14px 44px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 18px;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta">
-      App: <strong>GlowStyle Ideas</strong><br />
-      Developer: <strong>Syahrul Ahmad Saputra</strong><br />
-      Last Updated: <strong>June 4, 2026</strong>
-    </p>
+  <main class="container">
+    <article class="card">
+      <h1>Privacy Policy for GlowStyle Ideas</h1>
+      <div class="updated">Last Updated: June 1, 2026</div>
 
-    <p>
-      GlowStyle Ideas ("we," "our," or "us") is committed to protecting your privacy.
-      This Privacy Policy explains how we collect, use, disclose, and safeguard your information
-      when you use our mobile application, GlowStyle Ideas (the "App").
-    </p>
+      <p class="intro">GlowStyle Ideas ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, GlowStyle Ideas (the "App").</p>
 
-    <p>
-      Please read this Privacy Policy carefully. By accessing or using the App, you agree to the
-      collection and use of information in accordance with this policy. If you do not agree with
-      the terms of this Privacy Policy, please do not access or use the App.
-    </p>
+      <p>Please read this Privacy Policy carefully. By accessing or using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this Privacy Policy, please do not access the App.</p>
 
-    <div class="box">
-      <strong>Important:</strong> GlowStyle Ideas provides cosmetic appearance and personal style insights only.
-      It is not a medical device and does not provide medical advice. It does not diagnose, treat,
-      cure, or prevent any condition. For skin concerns or health questions, please consult a qualified professional.
-    </div>
+      <h2>1. Information We Collect</h2>
+      <p>We believe in data minimization and transparency. We collect the minimum amount of data required to provide the core functionality of the App: estimating face shapes, providing cosmetic appearance insights, and managing your style journal.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>
-      We believe in data minimization and transparency. We collect or process only the information
-      needed to provide the App’s core functionality, such as estimating face shape, providing
-      cosmetic appearance insights, managing your Progress Journal, supporting subscriptions,
-      and improving app stability.
-    </p>
+      <h3>A. 2D Photo &amp; Face Image Data (No TrueDepth or ARKit usage)</h3>
+      <ul>
+        <li><strong>What we collect:</strong> When you take a photo using the App's camera or select a photo from your device's photo library, the App accesses the 2D visual image.
+          <ul>
+            <li><strong>Note on Apple Face Data APIs:</strong> GlowStyle Ideas <strong>does not</strong> use or access Apple's TrueDepth API, ARKit face tracking (such as <code>ARFaceTrackingConfiguration</code>), or any 3D facial topology/mesh mapping. We do not collect or process depth maps, coordinate tracking data, or biometric face prints.</li>
+          </ul>
+        </li>
+        <li><strong>How it is used:</strong> The 2D face image is optimized, resized, and converted to a base64 string on-device. It is then securely transmitted via encrypted HTTPS to our AI service provider, OpenRouter (which processes it via Gemini and GPT models), solely to analyze the visual outline and landmarks for non-medical cosmetic and style suggestions (e.g., face shape estimation, styling advice, hairstyle ideas, and makeup contour coordinates).</li>
+        <li><strong>Face Recognition and Identification:</strong> We <strong>do not</strong> use face images for facial recognition, user identification, user authentication, profile matching, or tracking. The data is processed anonymously without association with personal identity.</li>
+        <li><strong>Data Sharing &amp; Third Parties:</strong> The 2D photo is shared only with OpenRouter (our AI processing partner) to generate the cosmetic styling result. We confirm that any third-party service provider we share data with (including OpenRouter and its underlying AI models) provides the same or equal privacy and security protection as described in this Policy. The photo is not shared with any advertisers, data brokers, or other third parties.</li>
+        <li><strong>Storage and Retention:</strong> We <strong>do not</strong> store your face images or facial analysis data on our servers. The face images are processed in-memory for the duration of the API analysis request and are automatically and permanently deleted from operational memory immediately after the styling results are returned (typically within seconds). No face image data is ever written to persistent remote storage.</li>
+      </ul>
 
-    <h3>A. 2D Photo and Face Image Data</h3>
-    <p>
-      When you take a photo using the App’s camera or select a photo from your device’s photo library,
-      the App accesses the 2D visual image that you choose to provide.
-    </p>
+      <h3>B. Private Progress Journal (On-Device Storage)</h3>
+      <ul>
+        <li><strong>What we collect:</strong> The App stores your saved style summaries (including dates, face shape estimates, appearance notes, and self-care ideas) locally on your device.</li>
+        <li><strong>Storage:</strong> This data is stored using iOS persistent local storage (<code>UserDefaults</code> and file systems) and remains on your device. We do not sync your Progress Journal to a remote server. You can delete entries or clear the entire journal at any time from the App's settings screen.</li>
+      </ul>
 
-    <p>
-      <strong>No TrueDepth or ARKit Face Tracking:</strong> GlowStyle Ideas does not use or access Apple’s
-      TrueDepth API, ARKit face tracking, ARFaceTrackingConfiguration, 3D facial topology,
-      facial mesh mapping, depth maps, coordinate tracking data, or biometric face prints.
-    </p>
+      <h3>C. Purchase and Subscription Data</h3>
+      <ul>
+        <li><strong>What we collect:</strong> To verify and manage your premium subscription, we use a third-party service, RevenueCat. RevenueCat collects purchase-related information such as transaction IDs, purchase dates, subscription status, and receipt validation tokens.</li>
+        <li><strong>Identity:</strong> This data is associated with an anonymous, randomized user identifier generated by the App. We do not collect or store your real name, email address, billing address, or credit card information; all financial transactions are handled securely by Apple's App Store.</li>
+      </ul>
 
-    <p>
-      <strong>How photos are used:</strong> The selected 2D photo may be optimized, resized, and converted
-      into a compatible format on your device before being transmitted securely via encrypted HTTPS
-      to our AI service provider, OpenRouter. OpenRouter may process the image using Gemini and GPT
-      models only to generate non-medical cosmetic and style suggestions, such as face shape estimates,
-      appearance notes, hairstyle ideas, grooming ideas, glasses ideas, photo pose tips, and general
-      self-care ideas.
-    </p>
+      <h3>D. Device and Usage Information</h3>
+      <ul>
+        <li><strong>What we collect:</strong> We do not track your location, browsing history, or personal identifiers. The App may collect anonymous diagnostic logs (such as crash reports) to help us maintain stability and troubleshoot bugs.</li>
+      </ul>
 
-    <p>
-      <strong>No face recognition or identification:</strong> GlowStyle Ideas does not use face images for
-      facial recognition, user identification, user authentication, profile matching, identity comparison,
-      or tracking. The App does not identify people and does not compare faces to determine identity.
-    </p>
+      <h2>2. Sharing Your Information</h2>
+      <p>We do not sell, trade, or rent your personal information to third parties. We only share information with trusted third-party service providers who are essential to the App's operations:</p>
+      <ol>
+        <li><strong>OpenRouter (AI Analysis):</strong> Selected face images are securely transmitted to OpenRouter to analyze and extract cosmetic insights using the Gemini/GPT models.</li>
+        <li><strong>RevenueCat (Subscription Management):</strong> Transaction receipts are securely sent to RevenueCat to check and validate your entitlement status.</li>
+        <li><strong>Apple App Store (Payment Processing):</strong> All subscription purchases, renewals, and refunds are processed exclusively by Apple.</li>
+      </ol>
 
-    <p>
-      <strong>No sensitive trait prediction:</strong> GlowStyle Ideas does not predict age, gender, ethnicity,
-      attractiveness, emotions, or other sensitive personal traits.
-    </p>
+      <h2>3. Data Retention and Deletion</h2>
+      <ul>
+        <li><strong>Image Data:</strong> Photos captured or uploaded to the App are deleted automatically from operational memory immediately after the analysis request completes.</li>
+        <li><strong>Progress Journal:</strong> Your journal history is stored locally on your device. You have full control over this data. You can delete specific entries or purge the entire journal database at any time using the "Clear Journal Entries" option in the Settings view.</li>
+        <li><strong>Subscription History:</strong> Subscription tokens are stored by Apple and RevenueCat. If you wish to delete your anonymous subscription history, you may request help through our support channel.</li>
+      </ul>
 
-    <p>
-      <strong>Data sharing for AI processing:</strong> Selected 2D photos are shared only with our AI processing
-      provider, OpenRouter, for the purpose of generating the cosmetic styling result requested by you.
-      Photos are not shared with advertisers, data brokers, or unrelated third parties.
-    </p>
+      <h2>4. Children's Privacy</h2>
+      <p>The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-    <p>
-      <strong>Remote storage:</strong> We do not store your face images or facial analysis data on our own servers.
-      Photos are processed for the duration needed to complete the AI analysis request. We do not write your
-      face image data to persistent remote storage controlled by us.
-    </p>
+      <h2>5. Security of Your Data</h2>
+      <p>We take the security of your data seriously. All communications between the App and our service providers (OpenRouter, RevenueCat) are encrypted using Transport Layer Security (TLS/HTTPS).</p>
 
-    <h3>B. Progress Journal Data</h3>
-    <p>
-      If you save scan results, the App may store your saved style summaries, including dates,
-      face shape estimates, appearance notes, style ideas, self-care ideas, and related journal
-      information.
-    </p>
+      <h2>6. Apple App Store Compliance</h2>
+      <p>This Privacy Policy is designed to comply with Apple’s App Store Review Guidelines, including Guideline 5.1 (Privacy). We respect user privacy choices, provide transparent disclosures, and grant you full control over your locally stored journal data.</p>
 
-    <p>
-      Your Progress Journal is stored locally on your device using iOS persistent local storage,
-      such as UserDefaults or local file storage, depending on the App version. We do not sync your
-      Progress Journal to our own remote server.
-    </p>
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this document.</p>
 
-    <p>
-      The Progress Journal is for private cosmetic review only. It is not medical history and should
-      not be used for diagnosis, treatment, or health decisions.
-    </p>
-
-    <h3>C. Purchase and Subscription Data</h3>
-    <p>
-      To verify and manage premium access, GlowStyle Ideas may use RevenueCat or a similar subscription
-      management service. RevenueCat may process purchase-related information such as transaction IDs,
-      purchase dates, subscription status, receipt validation tokens, and entitlement status.
-    </p>
-
-    <p>
-      Subscription data may be associated with an anonymous or randomized user identifier generated by
-      the App or subscription service. We do not collect or store your real name, billing address,
-      full payment card number, or credit card information. Financial transactions are handled by Apple
-      through the App Store.
-    </p>
-
-    <h3>D. Device, Usage, and Diagnostic Information</h3>
-    <p>
-      The App may collect limited technical and diagnostic information, such as crash reports,
-      app performance data, device type, operating system version, and feature interaction data.
-      This information is used to maintain app stability, fix bugs, and improve the user experience.
-    </p>
-
-    <p>
-      We do not use this information to track your precise location, browsing history, or identity.
-    </p>
-
-    <h3>E. Contact Information</h3>
-    <p>
-      If you contact us for support, we may receive your email address and any information you choose
-      to include in your message. We use this information only to respond to your request and provide support.
-    </p>
-
-    <h2>2. How We Use Information</h2>
-    <p>
-      We use information to:
-    </p>
-    <ul>
-      <li>Provide cosmetic appearance and personal style insights.</li>
-      <li>Generate face shape estimates and beauty/style suggestions from selected photos.</li>
-      <li>Display and save scan results in the Progress Journal when you choose to save them.</li>
-      <li>Manage premium features, subscriptions, entitlements, and purchase restoration.</li>
-      <li>Improve app performance, stability, security, and user experience.</li>
-      <li>Respond to support requests.</li>
-      <li>Comply with legal, safety, platform, and App Store requirements.</li>
-    </ul>
-
-    <h2>3. Sharing Your Information</h2>
-    <p>
-      We do not sell, trade, or rent your personal information to third parties. We only share information
-      with trusted third-party service providers when necessary to operate the App.
-    </p>
-
-    <ul>
-      <li>
-        <strong>OpenRouter:</strong> Selected photos may be securely transmitted to OpenRouter to generate
-        cosmetic appearance and style insights using AI models.
-      </li>
-      <li>
-        <strong>RevenueCat:</strong> Purchase receipts and subscription-related data may be processed by
-        RevenueCat to validate and manage premium access.
-      </li>
-      <li>
-        <strong>Apple App Store:</strong> Purchases, renewals, cancellations, and refunds are processed by Apple.
-      </li>
-      <li>
-        <strong>Analytics or crash reporting tools:</strong> If used, limited diagnostic data may be processed
-        to help improve app performance and reliability.
-      </li>
-    </ul>
-
-    <h2>4. Data Retention and Deletion</h2>
-    <p>
-      <strong>Image Data:</strong> Photos captured or uploaded to the App are used to complete the selected
-      cosmetic scan request. We do not store your face images on our own servers. Image data is processed
-      only as needed to generate the requested result.
-    </p>
-
-    <p>
-      <strong>Progress Journal:</strong> Your saved journal entries are stored locally on your device. You have
-      control over this data. If the App provides delete options, you may delete specific journal entries or
-      clear the entire journal from within the App. You may also remove locally stored data by deleting the App
-      from your device.
-    </p>
-
-    <p>
-      <strong>Subscription History:</strong> Subscription records and transaction history may be retained by Apple
-      and RevenueCat as needed for purchase validation, subscription management, legal compliance, and fraud prevention.
-    </p>
-
-    <h2>5. Your Choices and Controls</h2>
-    <p>
-      You may choose not to upload photos or use the scan features. You may also deny camera or photo library
-      permission through your device settings, although some App features may not work without those permissions.
-    </p>
-
-    <p>
-      You may manage or cancel subscriptions through your Apple ID subscription settings. You may delete local
-      journal entries where the App provides that option.
-    </p>
-
-    <h2>6. Camera and Photo Library Permissions</h2>
-    <p>
-      GlowStyle Ideas may request access to your camera and photo library only when needed for app functionality.
-    </p>
-
-    <ul>
-      <li>
-        <strong>Camera access:</strong> Used to take a face photo for cosmetic appearance and style insights.
-      </li>
-      <li>
-        <strong>Photo library access:</strong> Used to select an image for cosmetic appearance and style insights.
-      </li>
-      <li>
-        <strong>Photo saving access:</strong> If available, used only when you choose to save or export a style summary.
-      </li>
-    </ul>
-
-    <h2>7. No Medical, Diagnostic, or Health Use</h2>
-    <p>
-      GlowStyle Ideas is a cosmetic and personal style app. The App does not provide medical advice,
-      medical diagnosis, skin disease detection, clinical results, treatment plans, medication advice,
-      risk scores, or emergency guidance.
-    </p>
-
-    <p>
-      AI-generated outputs are intended only for general cosmetic, beauty, grooming, style, and self-care purposes.
-      Results may vary depending on photo quality, lighting, angle, camera settings, and other factors.
-    </p>
-
-    <p>
-      For skin concerns, health questions, or medical decisions, please consult a qualified professional.
-    </p>
-
-    <h2>8. Security of Your Data</h2>
-    <p>
-      We take reasonable measures to protect information from unauthorized access, loss, misuse, or alteration.
-      Communications between the App and service providers such as OpenRouter and RevenueCat are encrypted using
-      Transport Layer Security (TLS/HTTPS).
-    </p>
-
-    <p>
-      However, no method of electronic storage or transmission over the internet is completely secure, and we cannot
-      guarantee absolute security.
-    </p>
-
-    <h2>9. Children’s Privacy</h2>
-    <p>
-      GlowStyle Ideas is not intended for children under the age of 13. We do not knowingly collect personal information
-      from children under 13. If you believe a child has provided personal information, please contact us so we can take
-      appropriate action.
-    </p>
-
-    <h2>10. International Data Processing</h2>
-    <p>
-      Depending on the service providers used by the App, information may be processed in countries other than the country
-      where you live. These countries may have data protection laws that differ from those in your jurisdiction.
-    </p>
-
-    <h2>11. Apple App Store Compliance</h2>
-    <p>
-      This Privacy Policy is designed to support compliance with Apple App Store Review Guidelines, including privacy
-      transparency requirements. We provide disclosures about photo processing, AI processing, subscriptions, and local
-      Progress Journal storage so users can make informed choices.
-    </p>
-
-    <h2>12. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
-      "Last Updated" date. Your continued use of the App after changes are posted means you accept the updated Privacy Policy.
-    </p>
-
-    <h2>13. Contact Us</h2>
-    <p>
-      If you have any questions, feedback, or concerns regarding this Privacy Policy or the App, please contact us:
-    </p>
-
-    <p>
-      Support Page:
-      <a href="https://ccrdeveloper.github.io/support/support.html" target="_blank" rel="noopener noreferrer">
-        https://ccrdeveloper.github.io/support/support.html
-      </a>
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:ccrdevbusiness@gmail.com">ccrdevbusiness@gmail.com</a>
-    </p>
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please contact us at:</p>
+      <div class="contact-box">
+        <p><strong>Support Page:</strong> <a href="https://ccrdev.example.com/support">https://ccrdev.example.com/support</a></p>
+        <p><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+      </div>
+    </article>
 
     <footer>
-      <p>Copyright © 2026 CCR Dev. All rights reserved.</p>
+      &copy; 2026 GlowStyle Ideas. All rights reserved.
     </footer>
   </main>
 </body>
