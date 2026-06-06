@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f7fbf5;
+      --card: #ffffff;
+      --text: #1f2a24;
+      --muted: #5d6b63;
+      --accent: #3f8f5f;
+      --border: #dbe8dc;
+      --shadow: rgba(24, 66, 38, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(92, 176, 117, 0.16), transparent 34rem),
+        linear-gradient(180deg, #f7fbf5 0%, #eef7ef 100%);
+      padding: 24px;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 18px 50px var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 44px 38px 30px;
+      background: linear-gradient(135deg, #e8f7e9 0%, #f9fff8 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(63, 143, 95, 0.12);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .content {
+      padding: 34px 38px 46px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+      color: #17391f;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 19px;
+      color: #244b2e;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    ul, ol {
+      margin: 8px 0 20px 22px;
+      padding: 0;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 8px 0;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #edf5ee;
+      color: #244b2e;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+
+    .footer {
+      padding: 22px 38px;
+      border-top: 1px solid var(--border);
+      background: #fbfefb;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 12px;
+      }
+
+      .hero, .content, .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .page {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="badge">Plant Identifier: PlanSnap</span>
+      <h1>Privacy Policy</h1>
+    </section>
+    <section class="content">
+<h1>Privacy Policy for Plant Identifier: PlanSnap</h1>
+<p><strong>Last Updated: June 6, 2026</strong></p>
+<p>Plant Identifier: PlanSnap (&quot;PlanSnap,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, Plant Identifier: PlanSnap (the &quot;App&quot;).</p>
+<p>Please read this Privacy Policy carefully. By accessing or using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this Privacy Policy, please do not access the App.</p>
+<hr>
+<h2>1. Information We Collect</h2>
+<p>We believe in data minimization and transparency. We collect the minimum amount of data required to provide the core functionality of the App: identifying plants from photos and managing your subscriptions.</p>
+<h3>A. Photo &amp; Image Data (For Identification Only)</h3>
+<ul>
+<li><strong>What we collect:</strong> When you use the App&#x27;s camera to take a photo of a plant or upload a photo from your library, we temporarily access and process the image.</li>
+<li><strong>How it is used:</strong> The image is optimized, encoded as a base64 string, and transmitted securely via HTTPS to the OpenRouter API (which routes the request to AI providers such as Google Gemini and OpenAI) to perform visual identification of the plant.</li>
+<li><strong>Storage:</strong> We <strong>do not</strong> store your images on our servers. Images are only processed in memory for the duration of the API call. Identification results and the photo you submit are stored locally on your device as part of your scan history.</li>
+</ul>
+<h3>B. Local Scan History (On-Device Storage)</h3>
+<ul>
+<li>Scan results, optional saved favorites, and the photo associated with each scan are stored locally on your device using standard iOS storage mechanisms.</li>
+<li>This data is <strong>never transmitted to our servers</strong>. Clearing scan history from within the app or deleting the app removes this data.</li>
+</ul>
+<h3>C. Subscription &amp; Purchase Information</h3>
+<ul>
+<li>Subscription purchases are processed by Apple and managed through RevenueCat. We receive an anonymous user identifier and entitlement status (for example, whether you have an active premium subscription).</li>
+<li>We do not receive your full payment details. Apple is the sole processor for in-app purchases.</li>
+</ul>
+<h3>D. Device &amp; Diagnostic Data</h3>
+<ul>
+<li>We may receive limited, non-personal diagnostic data from Apple (such as crash logs) if you have opted into sharing app analytics with developers via your iOS Settings.</li>
+</ul>
+<hr>
+<h2>2. How We Use Your Information</h2>
+<ul>
+<li>To provide AI-powered plant identification and educational information.</li>
+<li>To maintain your local scan history and saved favorites.</li>
+<li>To manage your free and premium entitlements.</li>
+<li>To improve app reliability through aggregated, anonymous diagnostics.</li>
+</ul>
+<hr>
+<h2>3. Third-Party Services</h2>
+<p>PlanSnap uses the following third-party services:</p>
+<ul>
+<li><strong>OpenRouter (openrouter.ai):</strong> Routes AI inference requests, including image and prompt data, to model providers such as Google Gemini and OpenAI. Please review OpenRouter&#x27;s privacy policy for details.</li>
+<li><strong>RevenueCat:</strong> Manages subscription state and restoration. Receives anonymous purchase identifiers.</li>
+<li><strong>Apple App Store / StoreKit:</strong> Processes in-app purchases.</li>
+</ul>
+<p>We do not sell your data. We do not use scan images for advertising tracking.</p>
+<hr>
+<h2>4. AI Disclaimer</h2>
+<p>Plant Identifier: PlanSnap provides educational AI-generated information only. AI identification may be inaccurate. Results should not be used as professional botanical, gardening, medical, veterinary, poison control, emergency, legal, or safety advice. Do not eat, ingest, touch, or use unknown plants for medical or herbal purposes based only on this result. Some plants may be toxic to people or pets. For poisoning concerns, allergies, protected plants, or unclear identification, contact a qualified professional or local poison control.</p>
+<hr>
+<h2>5. People in Photos</h2>
+<p>Please avoid uploading photos that contain identifiable people. The App focuses only on the visible plant. We do not perform face recognition. If you submit an image that contains a person, that image is still sent to AI providers for plant identification only; please crop or avoid such images if privacy is a concern.</p>
+<hr>
+<h2>6. Children&#x27;s Privacy</h2>
+<p>PlanSnap is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with information, please contact us so we can remove it.</p>
+<hr>
+<h2>7. Your Choices</h2>
+<ul>
+<li>You can clear all locally stored scan history from within the App at any time via Settings → Clear Scan History.</li>
+<li>You can revoke camera or photo library permissions at any time via iOS Settings.</li>
+<li>You can manage or cancel your subscription via your Apple ID account settings.</li>
+</ul>
+<hr>
+<h2>8. Data Retention</h2>
+<p>Locally stored scan history remains on your device until you delete it. Subscription entitlement data is retained by RevenueCat in accordance with their policies for as long as your subscription is active.</p>
+<hr>
+<h2>9. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. The &quot;Last Updated&quot; date will reflect the most recent revision. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+<hr>
+<h2>10. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, please contact:</p>
+<p><strong>Developer:</strong> Syahrul Ahmad Saputra <strong>Email:</strong> ccrdevbusiness@gmail.com <strong>Copyright:</strong> © 2026 CCR Dev</p>
+    </section>
+    <section class="footer">
+      © 2026 CCR Dev. All rights reserved.
+    </section>
+  </main>
+</body>
+</html>
